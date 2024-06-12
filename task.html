@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sara Gorcevska">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="task.css">
+        <title>TaskLite</title>
+    </head>
+    <body class="light-mode">
+        <div class="page-introduction">
+            <img src="logo-black.png" id="logo">
+            <!-- <button onclick="toggleDarkMode()">Toggle Dark Mode</button> -->
+            <img src="day-removebg-preview.png" id="image-day-mode" onclick="toggleDarkMode()">
+            <p>Click on the button to change light and dark mode</p>
+        </div>
+       
+        <div class="app">
+            <div id="tasks">
+                <label for="taskName" class="light-mode">Task Name</label>
+                <input type="text" id="taskName" placeholder="Enter task name" class="light-mode-input">
+    
+                <label for="taskDescription" class="light-mode">Task Description</label>
+                <textarea id="taskDescription" cols="50" rows="15" placeholder="Enter task description" class="light-mode-input"></textarea>
+    
+                <button onclick="addTask()" id="add" class="light-add-task-button">Add Task</button>
+            </div>
+
+            <div class="results">
+                <p id="error-message">Please enter both a task name and description.</p>
+                <div id="taskList"></div>
+            </div>            
+        </div>
+    
+        <script src="task.js"></script>
+    </body>
+</html>

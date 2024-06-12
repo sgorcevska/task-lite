@@ -1,0 +1,111 @@
+body {
+    margin: 20px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+#logo{
+    max-width: 80px;
+}
+.app{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+textarea, input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    border: 1px solid rgba(112, 18, 78);
+}
+textarea, input, button, .dark-mode-inputs, .dark-add-task-button{
+    box-shadow: rgba(112, 18, 78, 0.19) 0px 10px 20px, rgba(112, 18, 78, 0.23) 0px 6px 6px,  rgba(112, 18, 78, 0.33) 0px 3px 3px;
+}
+#tasks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    float: left;
+}
+#empty-input{
+    color: red;
+}
+.edit-button{
+    max-width: 20px;
+    visibility: hidden;
+}
+.dark-mode-inputs, .dark-add-task-button{
+    background-color: #221833;
+    border: 1px solid rgba(112, 18, 78);
+}
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #9356A0;
+}
+input:focus, textarea:focus{
+    border: 0.1px solid rgba(216, 105, 216, 0.623);
+    outline: 0;
+}
+.task-heading-dark, .task-heading-light{
+    padding: 5px 15px;
+    width: 400px;
+}
+.task-heading-dark{
+    background-color: #2C1B47;
+}
+.task-heading-light{
+    background: linear-gradient(180deg, rgba(147,86,160,1) 50%, rgba(108,70,135,0) 100%);
+    border-radius: 10px;
+}
+.task-text, .task-heading-dark,input:focus, textarea:focus, .task-text-dark,.dark-mode-inputs, .dark-add-task-button {
+    color: darkgray;
+}
+.svg-icons{
+    width: 30px;
+    padding: 5px 10px;
+}
+.svg-icons:hover, .add-task-button:hover, #image-day-mode:hover{
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.buttonsIndividual{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dark-add-task-button, .light-add-task-button{
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 10px;
+} 
+.light-add-task-button{
+    background-color: #b787c2;
+}
+.light, .light-add-task-button, .task-text{
+    color: black;
+}
+#error-message{
+    color: darkred;
+    text-decoration: underline;
+}
+#image-day-mode{
+    max-width: 150px;
+}
+.page-introduction{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+}
